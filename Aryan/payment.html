@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Payment</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="login-box">
+
+<h1>💳 Payment</h1>
+
+<input type="text" placeholder="Name">
+
+<input type="number" placeholder="Card Number">
+
+<input type="number" placeholder="CVV">
+
+
+<button onclick="pay()">
+Pay Now
+</button>
+
+
+</div>
+
+
+
+<script>
+
+function pay(){
+
+localStorage.removeItem("cart");
+
+window.location.href="order-success.html";
+
+}
+
+</script>
+
+
+</body>
+
+</html>
